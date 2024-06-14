@@ -615,6 +615,15 @@ fadecandy:
     dithering: single|bool|true
     console_log: single|enum(none,basic,full)|none
     file_log: single|enum(none,basic,full)|basic
+tiny_pinball:
+    __valid_in__: machine
+    __type__: config
+    port: single|str|
+    display_flash_frequency: single|float|1.0
+    display_flash_duty: single|float|0.5
+    debug: single|bool|false
+    console_log: single|enum(none,basic,full)|none
+    file_log: single|enum(none,basic,full)|basic
 fast:
     __valid_in__: machine
     __type__: config

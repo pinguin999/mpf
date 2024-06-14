@@ -30,6 +30,7 @@ their spare time, unpaid, for the love of pinball!
  * Dave Ensminger <dave@ensadi.com>
  * Charles Duncan (nullbuilds)
  * Eric Selk <ericselk2018@gmail.com>
+ * Kolja Lubitz <pinguin999@gmail.com>
 
 MPF was inspired by pyprocgame which was written by:
 

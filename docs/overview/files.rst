@@ -3,7 +3,7 @@ MPF Files & Modules
 
 The MPF packages contains the following folders:
 
-* ``/build_scripts``: Scripts which can be used to locally build & test MPF packages and wheels
+* ``/.github``: GitHub CI config to build & test MPF packages and wheels
 * ``/docs``: The Sphinx-based developer docs that you're reading now
 * ``/mpf``: The actual mpf package that's copied to your machine when MPF is installed
 * ``/tools``: A few random tools

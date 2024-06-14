@@ -108,6 +108,7 @@ mpf:
         i2c_servo_controller: mpf.platforms.i2c_servo_controller.I2CServoControllerHardwarePlatform
         mypinballs: mpf.platforms.mypinballs.mypinballs.MyPinballsHardwarePlatform
         lisy: mpf.platforms.lisy.lisy.LisyHardwarePlatform
+        tiny_pinball: mpf.platforms.tiny_pinball.tiny_pinball.TinyPinballHardwarePlatform
         openpixel: mpf.platforms.openpixel.OpenpixelHardwarePlatform
         opp: mpf.platforms.opp.opp.OppHardwarePlatform
         p_roc:  mpf.platforms.p_roc.PRocHardwarePlatform
