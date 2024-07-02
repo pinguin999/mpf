@@ -93,6 +93,28 @@ class TinyPinballHardwarePlatform(
 
             await super().initialize()
 
+            # #### Create Device Config ##### #
+            config_yaml = ""
+
+            # autofire_coils -> bumper: #kicker
+            for coil_name in self.machine.config['autofire_coils']:
+                coil = self.machine.config['autofire_coils'][coil_name]
+                config_yaml += f"""
+{coil_name}: #kicker
+  trigger:
+    port: {self.machine.config['switches'][coil["switch"]]["number"]}
+  coil:
+    port: {self.machine.config['coils'][coil["coil"]]["number"]}
+  lamp:
+    port: -1
+  power: {coil["power"]}
+  delay: {coil["delay"]}
+  hold_time: {coil["hold_time"]}
+  cooldown: {coil["cooldown"]}
+"""
+
+            print(config_yaml)
+
             self.controller = SoftwareController(self.config['port'])
             self.controller.connect()
             while True:
